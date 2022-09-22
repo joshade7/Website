@@ -1,0 +1,79 @@
+/* This is a rule */
+
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+
+#wrapper{
+    max-width: 960px;
+    /* border-style: solid; */
+    margin: auto;
+}
+header{
+    background-color: #000000;
+    color: #fff;
+    height: 50px;
+}
+
+/* contextual selector */
+header img{
+    float:left;
+    padding-right: 20px;
+}
+
+/* Grouping Selectors */
+
+nav, footer{
+    min-height: 25px;
+    background-color:#7cb342;
+}
+
+.floatleft{
+    float: left;
+    padding-right: 10px;
+}
+
+/* styling for Headers */
+h1{
+    text-transform: capitalize;
+}
+
+/* Pseudo class */
+
+article p:first-of-type{
+    font-weight: bold;
+}
+
+blockquote{
+    border-style: dotted;
+    border-width: 2px;
+    padding: 10px;
+    font-size: 1.6rem;
+    text-align: justify;
+    background-color: #9932cc;
+}
+
+/* styling for nav menu */
+
+#myMenu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+summary{list-style: none;}
+
+/* if the screen width is more than 400px wide */
+@media screen and (min-width:700px) {
+    #myMenu{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    
+
+
+}
